@@ -6,66 +6,77 @@
     <title>Exercise 1</title>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
         
         body{
-            background-color: antiquewhite;
+            background-color: rgb(243, 240, 229);
         }
 
-        h3,
+        h4,
         p{
-            margin:0;
+            margin: 12px;
+        }
 
+        p{
+            color: rgb(87, 86, 86);
         }
 
         .container {
             max-width: 1024px;
-            margin:0 auto;
+            padding: 20px;
             display:flex;
-            gap:10px;
+            gap:30px;
+            margin: 0 auto;
             justify-content:center;
+            align-items: center;
         }
 
         .project{
             background-color: white;
-            padding: 10px;
-            border-radius: 5px;
-            font-weight: bold;
+            padding: 15px;
+            border-radius: 5%;
         }
 
-        h3{
-            font-family: "Oxygen",sans-serif;
-           
+        h4{
+            font-family: "Roboto",sans-serif;
+            font-size: 23px; 
         }
 
         p{
             font-family: "Oxygen",sans-serif;
-            font-weight: lighter;
+            font-weight: 30px;
+            font-size: 13px;
+            line-height: 25px;
+        }
+
+        img{
+            border-radius: 5%;
         }
 
     </style>
 </head>
 
 <body>
+    
     <div class="container">
 
         <div class="project">
             <img src="image/1.jpg" width="100%">
-            <h3>Residential project</h3>
-            <p>We build sustainable and modem homes for comfortable living.
+            <h4>Residential projects</h4>
+            <p>We build sustainable and modern homes for comfortable living.
             </p>
         </div>
 
         <div class="project">
             <img src="image/2.jpg" width="100%">
-            <h3>Commercial spaces</h3>
+            <h4>Commercial spaces</h4>
             <p>We create efficient, inspiring workspaces for businesses of all sizes.
             </p>
         </div>
 
         <div class="project">
             <img src="image/3.jpg" width="100%">
-            <h3>Infrastructure works</h3>
+            <h4>Infrastructure works</h4>
             <p>We develop strong, reliable infrastructure for growing communities.
             </p>
         </div>
