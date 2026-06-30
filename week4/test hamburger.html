@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container2 {
+            max-width: 1440px;
+            max-height: 863px;
+            padding: 30px 10px;
+            display:flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            gap:40px;
+            align-items: center;
+        }
+
+    .header{
+            display: flex;
+            align-items: center;
+            gap:50px;
+            justify-content: space-between;
+        }
+
+    a {
+            font-family: "Space Grotesk",sans-serif;
+            text-decoration: none;
+            color: #191A23;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+    .request{
+            background-color: white;
+            font-family: "Space Grotesk",sans-serif;
+            color:#191A23;
+            border: 1px solid #191A23; 
+            border-radius: 14px; 
+            padding: 20px 35px; 
+            text-align: center; 
+            display: inline-block; 
+            font-size: 20px; 
+            line-height: 28px;
+            margin: 4px 2px; 
+        }
+
+    .hamburger{
+            display: none;
+            font-size: 30px;
+    }
+
+    @media screen and (max-width:1130px){
+        .container2{
+            flex-direction:column;        
+        }
+    }
+
+    @media screen and (max-width:880px){
+        .request{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:730px){
+        .hamburger{
+            display: flex;
+        }
+        .header{
+            display:none
+        }
+
+        .container2{
+            flex-direction: row;
+        }
+
+
+    }
+    </style>
+
+</head>
+
+<body>
+
+   <div class="container2">
+
+        <div class="logo">
+            <img src="image/logo.jpg" width="100%">
+        </div>
+
+        <div class="header">
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Use Cases</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <button class="request">Request a quote</button>  
+        </div>
+
+        <div class="hamburger">=</div>
+    
+    </div>
+
+</body>
+</html>
