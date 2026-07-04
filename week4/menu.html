@@ -6,33 +6,31 @@
     <title>Responsive Menu</title>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
         
         .container{
             max-width: 1700px;
-            max-height: 979.33px;
-            padding: 10px 70px;
+            padding:0 10px;
             display:flex;
-            margin: 0;
-            gap:370px;
-            justify-content:space-between;
-            align-items:center;
+            justify-content: space-between;
+            margin: 0 40px;
+            align-items: center;
         }
 
         .logo{
             display:flex;
-            align-items: flex-start;
+            align-items: center;
         }
 
         .section{
             display:flex;
-            gap:30px;
+            gap:40px;
         }
 
         h4{
             font-family: 'Oxygen', sans-serif;
-            font-weight: 300;
             font-size: 18px;
+            font-weight: 700;
             line-height: 24px;
         }
 
@@ -40,11 +38,35 @@
             color: #f9612b;
         }
 
+        .phone{
+            display:flex;
+            gap:30px;
+            align-items: center;
+        }
+
+        .num{
+            font-family: 'Oxygen', sans-serif;
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .contact{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9612b;
+            border-radius: 14px;
+            padding: 0px 30px;
+            height: 50px;
+            color: white;
+ 
+        }
+
         .ham{
             display:none;
         }
 
-        @media screen and (max-width: 880px){
+        @media screen and (max-width: 1450px){
 
             .section{
                 display:none;
@@ -56,6 +78,18 @@
                 display:block;
             }
         }
+
+         @media screen and (max-width: 744px){
+            .num{
+                display:none;
+            }
+
+            .call{
+                display:none;
+            }
+
+        }
+
     </style>
 </head>
 
@@ -76,17 +110,11 @@
         </div>
 
         <div class="phone">
-            <img src="image/phone.png" width="50" height="50">
-            <h4>555-123-4567</h4>
+            <img class="call" src="image/phone.png" width="30" height="30">
+            <h4 class="num">555-123-4567</h4>
+            <h4 class="contact">Contact</h4>
+            <img class="ham" src="image/ham.png" width="60" height="50">
         </div>
-
-        <div class="contact">
-            <button>Contact</button>
-        </div>
-
-        <div class="ham">
-            <img src="image/ham.png" width="50" height="50">
-        </div>  
 
     </div>
 </body>
