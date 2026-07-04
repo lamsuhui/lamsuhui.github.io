@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        .container{
+            max-width: 1700px;
+            max-height: 979.33px;
+            padding: 10px 70px;
+            display:flex;
+            margin: 0;
+            gap:370px;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            display:flex;
+            align-items: flex-start;
+        }
+
+        .section{
+            display:flex;
+            gap:30px;
+        }
+
+        h4{
+            font-family: 'Oxygen', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .services{
+            color: #f9612b;
+        }
+
+        .ham{
+            display:none;
+        }
+
+        @media screen and (max-width: 880px){
+
+            .section{
+                display:none;
+            }
+            .contact{
+                display:none;
+            }
+            .ham{
+                display:block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div class="logo">
+            <img src="image/ele.png" width="376" height="73">
+        </div>
+
+        <div class="section">
+            <h4>Home</h4>
+            <h4 class="services">Services</h4>
+            <h4>Work</h4>
+            <h4>Project Details</h4>
+            <h4>Contact</h4>
+        </div>
+
+        <div class="phone">
+            <img src="image/phone.png" width="50" height="50">
+            <h4>555-123-4567</h4>
+        </div>
+
+        <div class="contact">
+            <button>Contact</button>
+        </div>
+
+        <div class="ham">
+            <img src="image/ham.png" width="50" height="50">
+        </div>  
+
+    </div>
+</body>
+</html>
