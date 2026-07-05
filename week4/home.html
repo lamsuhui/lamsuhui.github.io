@@ -54,6 +54,10 @@
             margin: 4px 2px; 
         }
 
+        .ham{
+            display: none;
+        }
+
         .container2 {
             max-width: 1440px;
             max-height: 863px;
@@ -163,7 +167,7 @@
         .des{
             font-size: 18px;
             font-weight: 400;
-            line-height: 100%;
+            line-height: 28px;
             max-width: 580px;
             padding: 0;
         }
@@ -318,7 +322,131 @@
             max-height: 68px;
         }
 
+        @media screen and (max-width: 1200px) {
+            .header {
+                display: none;
+            }
+
+            .ham {
+                display: block;
+            }
+
+            .container2 {
+                flex-direction: column-reverse;
+                gap: 20px;
+                align-items: center;
+                padding:40px 24px;
+            }
+
+            .describe {
+                max-width: 100%;
+            }
+
+            img {
+                max-width: 80%;
+                max-height:none;
+
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+
+            .book {
+                max-width: 100%;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .container3 {
+                display:flex;
+                flex-wrap: wrap;
+                gap: 32px 24px;
+                justify-content: center;
+                align-items: center;
+                padding: 40px 24px;
+                margin: 0px auto;
+                height: auto;
+            }
+
+            .container3 img {
+                max-width: 120px;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .container4 {
+                flex-direction:column;
+                gap: 30px;
+                align-items: center;
+                padding: 40px 24px;
+            }
+
+            .des{
+                font-size: 20px;
+
+            }
+
+            .container5{
+                max-height: none;
+                padding: 0px 24px;
+                gap:24px;
+            }
+
+            .service12,
+            .service34,
+            .service56{
+                flex-direction: column;
+                gap: 24px;
+                max-height: none;
+            }
+
+            .service1,
+            .service2,
+            .service3,
+            .service4,
+            .service5,
+            .service6{
+                max-height: none;
+            }
+
+            .cointainer6{
+                padding: 40px 24px;
+                max-height: none;
+            }
+
+            .rectangle{
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 40px 30px;
+                gap: 24px;
+                max-height: auto;
+                max-width: 100%;
+            }
+
+            .let{
+                max-width: 100%;
+            }
+
+            .get{
+                max-width: 100%;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            h4{
+                display: none;
+            }
+
+            .illus2{
+                display: none;
+            }
+
         
+
+            
+        }
 
     </style>
 
@@ -340,6 +468,8 @@
             <a href="#">Blog</a>
             <button class="request">Request a quote</button>  
         </div>
+
+        <img class="ham" src="image/ham.png" width="60" height="50">
     
     </div>
 
