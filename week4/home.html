@@ -149,54 +149,71 @@
             max-width: 1440px;
             max-height: 1010px;
             padding: 0px 100px;
-            display:flex;
             margin: 10px auto;
-            gap:40px;
             align-items:center;
         }
 
         .service12{
             display:flex;
-            gap:40px;
+            gap:100px;
             max-width: 1440px;
             max-height: 310px;
-            padding: 0px 0px;
             justify-content:space-between;
             align-items:center; 
         }
 
-        .service1{
-            width:fixed;
-            max-width: 600px;
+        .service1,
+        .service2{
+            width: 100%;
             max-height: 310px;
-            padding: 50px 50px;
+            padding: 50px;
             display:flex;
+            align-items: center;
             justify-content: space-between;
-            background-color: #F3F3F3;
             border: 1px solid #191A23;
             border-radius: 45px;
             box-shadow: 0px 5px 0px #191A23;
         }
 
+        .service1{
+            background-color: #f3f3f3;
+        }
+
+        .service2{
+            background-color: #b9ff66;
+        }
+
+
         .left{
             display:flex;
             flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 90px;
             max-width: 221px;
             max-height: 210px;
-            gap: 93px;
         }
 
-        span{
+        .green,
+        .white{
             max-width: 221px;
             max-height: 76px;
-            background-color: #b9ff66;
             border-radius: 7px;
-            display:flex;
+            display:inline-block;
             padding: 7px 7px;
             font-size: 30px;
             font-weight: 500;
             line-height: 100%;
             font-style: medium;
+            gap: 10px;
+        }
+
+        .green{
+            background-color: #b9ff66;
+        }
+
+        .white{
+            background-color: #ffffff;
         }
 
         .more{
@@ -269,20 +286,43 @@
             <div class="service1">
                 
                 <div class="left">
+
                     <div class="head">
-                    <span>Search engine</span>
-                    <span>optimization</span>
+                    <span class="green">Search engine</span>
+                    <span class="green">optimization</span>
                     </div>
 
                     <div class="more">
-                    <img src="image/icon.png" width="30px" height="30px">
+                    <img src="image/icon.png" width="50px" height="50px">
                     <h4>Learn more</h4>
-                
                     </div>
+
                 </div>
 
                 <div class="illus">
                 <img src="image/search.png" width="100%">
+                </div>
+
+            </div>
+
+            <div class="service2">
+
+                <div class="left">
+
+                    <div class="head">
+                    <span class="white">Pay-per-click</span>
+                    <span class="white">advertising</span>
+                    </div>
+
+                    <div class="more">
+                    <img src="image/icon.png" width="50px" height="50px">
+                    <h4>Learn more</h4>
+                    </div>
+
+                </div>
+
+                <div class="illus">
+                <img src="image/pay.png" width="100%">
                 </div>
 
             </div>
