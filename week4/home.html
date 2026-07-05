@@ -8,6 +8,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+        body{
+            font-family: "Space Grotesk",sans-serif;
+            color: #191A23;
+        }
+
         .container1 {
             max-width: 1440px;
             max-height: 863px;
@@ -63,15 +68,6 @@
         .describe{
             max-width: 50%;
             gap: 35px;
-        }
-
-        h1,
-        .service,
-        .des,
-        .book,
-        p{
-            color: #191A23;
-            font-family: "Space Grotesk",sans-serif;
         }
 
         h1{
@@ -149,6 +145,72 @@
             padding: 0;
         }
 
+        .container5{
+            max-width: 1440px;
+            max-height: 1010px;
+            padding: 0px 100px;
+            display:flex;
+            margin: 10px auto;
+            gap:40px;
+            align-items:center;
+        }
+
+        .service12{
+            display:flex;
+            gap:40px;
+            max-width: 1440px;
+            max-height: 310px;
+            padding: 0px 0px;
+            justify-content:space-between;
+            align-items:center; 
+        }
+
+        .service1{
+            width:fixed;
+            max-width: 600px;
+            max-height: 310px;
+            padding: 50px 50px;
+            display:flex;
+            justify-content: space-between;
+            background-color: #F3F3F3;
+            border: 1px solid #191A23;
+            border-radius: 45px;
+            box-shadow: 0px 5px 0px #191A23;
+        }
+
+        .left{
+            display:flex;
+            flex-direction: column;
+            max-width: 221px;
+            max-height: 210px;
+            gap: 93px;
+        }
+
+        span{
+            max-width: 221px;
+            max-height: 76px;
+            background-color: #b9ff66;
+            border-radius: 7px;
+            display:flex;
+            padding: 7px 7px;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 100%;
+            font-style: medium;
+        }
+
+        .more{
+            display:flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .illus{
+            max-width: 210px;
+            max-height: 166.05px;
+            margin: 2px 0px 2px 0px;
+        }
+
     </style>
 
 </head>
@@ -201,10 +263,32 @@
     </div>
 
     <div class="container5">
-        <div>
-            <span class="search">Search engine optimization</span>
-            <img src="img/search.png">
+
+        <div class="service12">
+            
+            <div class="service1">
+                
+                <div class="left">
+                    <div class="head">
+                    <span>Search engine</span>
+                    <span>optimization</span>
+                    </div>
+
+                    <div class="more">
+                    <img src="image/icon.png" width="30px" height="30px">
+                    <h4>Learn more</h4>
+                
+                    </div>
+                </div>
+
+                <div class="illus">
+                <img src="image/search.png" width="100%">
+                </div>
+
+            </div>
+
         </div>
+
     </div>
 
         
