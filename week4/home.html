@@ -8,7 +8,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-        .container2 {
+        .container1 {
             max-width: 1440px;
             max-height: 863px;
             padding: 30px 10px;
@@ -49,10 +49,10 @@
             margin: 4px 2px; 
         }
 
-        .container {
+        .container2 {
             max-width: 1440px;
             max-height: 863px;
-            padding: 50px 100px;
+            padding: 100px 100px;
             display:flex;
             margin: 0 auto;
             gap:370px;
@@ -66,6 +66,9 @@
         }
 
         h1,
+        .service,
+        .des,
+        .book,
         p{
             color: #191A23;
             font-family: "Space Grotesk",sans-serif;
@@ -85,7 +88,6 @@
 
         .book{
             background-color: #191A23;
-            font-family: "Space Grotesk",sans-serif;
             color: #F3F3F3;
             border: 1px solid #191A23; 
             border-radius: 14px; 
@@ -105,13 +107,46 @@
             max-height: 515px;
         }
 
-        .company{
+        .container3{
             height: 48px;
-            padding: 40px 10px;
+            padding: 100px 10px;
             display: flex;
             justify-content: space-between;
             margin: 0px 115.667px ;
             gap:20px;
+        }
+
+        .container4{
+            max-width: 1440px;
+            max-height: 863px;
+            padding: 100px 100px;
+            display:flex;
+            margin: 10px auto;
+            gap:40px;
+            align-items:center;
+        }
+
+        .service{
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 100%;
+            max-width: 178px;
+            max-height: 51px;
+            background-color: #b9ff66;
+            border-radius: 7px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4px 2px; 
+            padding: 10px 10px;
+        }
+
+        .des{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 100%;
+            max-width: 580px;
+            padding: 0;
         }
 
     </style>
@@ -120,7 +155,7 @@
 
 <body>
 
-   <div class="container2">
+   <div class="container1">
 
         <div class="logo">
             <img src="image/logo.jpg" width="100%">
@@ -137,7 +172,7 @@
     
     </div>
 
-    <div class="container">
+    <div class="container2">
 
         <div class="describe">
             <h1>Navigating the digital landscape for success</h1>
@@ -151,7 +186,7 @@
 
     </div>
 
-    <div class="company">
+    <div class="container3">
         <div><img src="image/amz.jpg" width="100%"></div>
         <div><img src="image/dribble.jpg" width="100%"></div>
         <div><img src="image/hub.jpg" width="100%"></div>
@@ -159,6 +194,22 @@
         <div><img src="image/ntf.jpg" width="100%"></div>
         <div><img src="image/zoom.jpg" width="100%"></div>
     </div>
+
+    <div class="container4">
+        <h2 class="service">Services</h2>
+        <p class="des">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.These services include:</p>
+    </div>
+
+    <div class="container5">
+        <div>
+            <span class="search">Search engine optimization</span>
+            <img src="img/search.png">
+        </div>
+    </div>
+
+        
+
+
 
 </body>
 </html>
