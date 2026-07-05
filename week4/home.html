@@ -125,9 +125,13 @@
             max-height: 68px;
         }
 
-        .img{
+        .image{
             max-width: 600.46px;
             max-height: 515px;
+        }
+
+        .small{
+            display:none;
         }
 
         .container3{
@@ -342,10 +346,14 @@
                 max-width: 100%;
             }
 
-            img {
-                max-width: 80%;
-                max-height:none;
+            .image {
+                display:none;
+            }
 
+            .small{
+                display: flex;
+                max-height: 850px;
+                max-width: 850px;
             }
 
             h1 {
@@ -360,19 +368,21 @@
             .container3 {
                 display:flex;
                 flex-wrap: wrap;
-                gap: 32px 24px;
+                gap: 40px 32px;
                 justify-content: center;
                 align-items: center;
-                padding: 40px 24px;
+                padding: 60px 24px;
                 margin: 0px auto;
                 height: auto;
             }
 
             .container3 img {
-                max-width: 120px;
+                max-width: 10px;
                 height: auto;
                 display: block;
                 margin: 0 auto;
+                display: block;
+                max-width: 160px;
             }
 
             .container4 {
@@ -410,17 +420,18 @@
                 max-height: none;
             }
 
-            .cointainer6{
-                padding: 40px 24px;
+            .container6{
+                padding: 24px;
                 max-height: none;
             }
 
             .rectangle{
                 flex-direction: column;
-                padding: 40px 0px;
+                padding: 60px 24px;
                 gap: 24px;
-                max-height: auto;
+                max-height: none;
                 max-width: 100%;
+                min-height: auto;
             }
 
             .let{
@@ -474,11 +485,12 @@
 
         <div class="describe">
             <h1>Navigating the digital landscape for success</h1>
+            <img class="small" src="image/pic1.jpg" width="100%">
             <p>Our digital marketing agency helps businesses grow and succeed online through a range of service include SEO, PPC, social media marketing, and content creation.</p>
             <button class="book">Book a consultation</button>
         </div>
 
-        <div class="img">
+        <div class="image">
             <img src="image/pic1.jpg" width="100%">
         </div>
 
