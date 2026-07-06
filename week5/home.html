@@ -31,6 +31,11 @@
             justify-content: space-between;
         }
 
+        .logo{
+            max-width: 240px;
+            display: block;
+        }
+
         a {
             font-family: "Space Grotesk",sans-serif;
             text-decoration: none;
@@ -326,7 +331,13 @@
             max-height: 68px;
         }
 
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1200px) 
+        {
+            .container1{
+               max-height: none;
+               padding: 20px 24px;
+            }
+        
             .header {
                 display: none;
             }
@@ -335,7 +346,12 @@
                 display: block;
             }
 
+            .logo{
+                max-width: 200px;
+            }
+
             .container2 {
+                max-height: none;
                 flex-direction: column-reverse;
                 gap: 20px;
                 align-items: center;
@@ -357,7 +373,11 @@
             }
 
             h1 {
-                font-size: 60px;
+                font-size: 50px;
+            }
+
+            p{
+                font-size: 20px;
             }
 
             .book {
@@ -431,11 +451,12 @@
                 gap: 24px;
                 max-height: none;
                 max-width: 100%;
-                min-height: auto;
+                min-height: 250px;
             }
 
             .let{
-                max-width: 100%;
+                width: 100%;
+                justify-content: center;
             }
 
             .get{
@@ -450,9 +471,6 @@
             .illus2{
                 display: none;
             }
-
-        
-
             
         }
 

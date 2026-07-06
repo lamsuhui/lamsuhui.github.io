@@ -20,7 +20,7 @@
 
      .header{
           max-width: 100%;
-          background-color: #cb2957;
+          background-color: #6b3f69;
           margin:0px auto;
           padding: 0px 15px;
           display: flex;
@@ -41,21 +41,91 @@
           border-radius: 100%;
      }
 
-     .profile h2,
+     h2,
+     h4,
      p{
-          color: #000;
+          color: #8d5f8c;
           text-align: center;
           margin: 10px;
      }
 
-     .profile h2{
-          font-size: 30px;
+     h2{
+          font-size: 20px;
      }
 
      .week234,
      .week567{
           display: flex;
+          justify-content:space-evenly;
+          margin: 0px auto;
+          padding: 10px;
+          max-width: 1200px;
      }
+
+     .topic{
+          display: flex;
+          gap:20px;
+          align-items: center; 
+          justify-content: center;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #8d5f8c;
+          margin-bottom: 16px;
+     }
+
+     .exc{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap:30px
+     }
+
+     .week2,
+     .week3,
+     .week4,
+     .week5{
+          width: 100%;
+          background-color: rgb(221, 195, 195,0.3);
+          margin: 20px 20px;
+          padding:20px 50px;
+          border-radius: 20px;
+     }
+
+     a{
+          text-decoration: none;
+          color: #a376a2;
+     }
+
+     .footer{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: #6b3f69;
+     }
+
+     .disclaimn{
+          display: flex;
+          align-items: center;
+          gap:20px
+          
+     }
+
+     @media screen and (max-width: 800px) {
+          .week234,
+          .week567
+          {
+               display:flex;
+                flex-wrap: wrap;
+                gap: 40px 32px;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                margin: 0px auto;
+                height: auto;
+          }
+          
+     }
+
+    
 
 
 
@@ -93,8 +163,8 @@
                </div>
 
                <div class="exc">
-                    <a href="week2/exe1.html">Exercise 1</a>
-                    <a href="week2/exe2.html">Exercise 2</a>
+                    <a href="week2/exe1.html" target="_blank">Exercise 1</a>
+                    <a href="week2/exe2.html" target="_blank">Exercise 2</a>
                </div>
 
           </div>
@@ -107,9 +177,9 @@
                </div>
 
                <div class="exc">
-                    <a href="week3/button.html">Exercise 1</a>
-                    <a href="week3/self-intro.html">Exercise 2</a>
-                    <a href="week3/artist.html">Exercise 3</a>
+                    <a href="week3/button.html" target="_blank">Exercise 1</a>
+                    <a href="week3/self-intro.html" target="_blank">Exercise 2</a>
+                    <a href="week3/artist.html" target="_blank">Exercise 3</a>
                </div>
 
           </div>
@@ -122,8 +192,8 @@
                </div>
 
                <div class="exc">
-                    <a href="week4/flexbox1.html">Exercise 1</a>
-                    <a href="week4/flexbox2.html">Exercise 2</a>
+                    <a href="week4/flexbox1.html" target="_blank">Exercise 1</a>
+                    <a href="week4/flexbox2.html" target="_blank">Exercise 2</a>
                </div>
 
           </div>
@@ -138,10 +208,10 @@
                </div>
 
                <div class="exc">
-                    <a href="week5/menu.html">Exercise 1</a>
-                    <a href="week5/home.html">Exercise 2</a>
+                    <a href="week5/menu.html" target="_blank">Exercise 1</a>
+                    <a href="week5/home.html" target="_blank">Exercise 2</a>
                </div>
-               
+
           </div>
      </div>
 
@@ -151,8 +221,11 @@
                <a href="https://www.facebook.com/share/1ExUWu2LvG/" target="_blank"><img src="image/fb.png"  width="50 " height="50"></a>
           </div>
 
-          <img src="image/disclaimn.png" width="20" height="20">
-          <h4>2026 [Lam Su Hui].All right reserved.</h4>
+          <div class="disclaimn">
+               <img src="image/disclaimn.png" width="20" height="20">
+               <h4>2026 [Lam Su Hui].All right reserved.</h4>
+          </div>
+
      </div>
 
 </body>
