@@ -3,47 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test color</title>
-
+    <title>week 3 test</title>
     <style>
-        body {
-        background-color: pink;
+
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body{
+            background: linear-gradient(to bottom, #ffffff, #b50752);
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('image/mafu.jpg');
+            background-size: cover;
+            background-position: center; 
         }
 
-        .container{
-            display: flex;
-            gap: 20px;
+        blockquote{
+            color:rgb(255, 255, 255);
+            font-weight:bold;
+            font-style:italic;
+            line-height: 1.5; 
+        
         }
-
-        .child{
-            width: 25%;
+        p{
+            color:rgb(255, 66, 66);
+            font-weight:bold;
+            font-style:italic;
+            line-height: 1.5;
+            /*
+            background-image: url('image/mafu.jpg');
+            background-size: cover;
+            background-position: center;
+            */
         }
-
-        @media screen and (max-width: 680px) { /*for mobile*/
-        body {
-            background-color: lightgreen;
-        }
-        .container{
-            flex-direction: column; /*let the begin flex-direction:row into column*/
-            gap:0px;
-        }
-        .child{
-            width: 100%;
-        }
+        h1{
+            color:blue;
+            font-family: 'Raleway', sans-serif;
+            font-weight:bold;
+            line-height: 1.5;
         }
     </style>
 </head>
-
 <body>
-    <h1>Resize the browser window to see the effect!</h1>
 
-    <p>The media query is applied if the media type is screen, and the viewport width is 480px or more.</p>
-
-    <div class="container">
-        <div class="child">1.hhhhhhhhhhhhhhhhhhhhhhhhappppppppppppppyyyyyyyyyy</div>
-        <div class="child">2.jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</div>
-        <div class="child">3.jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</div>
-        <div class="child">4.jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</div>
-    </div>
+    <blockquote>MAFUMAFUMAFUMAFUMAFU</blockquote>
+    <hr>
+    <p>this is a testttttttttttttttttttttttttttttttttttttttt
+        tttttttttttttttttttttttttttttttttttttttttttttttttttt
+        tttttttttttttttttttttttttttttttttttttttttttttttttttt
+    mafumafumafumafumafumafumafumafumafumafumafumafumafumafu
+    mafumafumafumafumafumafumafumafumafumafumafumafumafumafu
+    mafumafumafumafumafumafumafumafumafumafumafumafumafumafu
+    mafumafumafumafumafumafumafumafumafumafumafumafumafumafu
+    mafumafumafumafumafumafumafumafumafumafumafumafumafumafu
+    mafumafumafumafumafumafumafumafumafumafumafumafumafumafu
+    uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</p>
+    <h1>this is a test</h1>
 </body>
 </html>
