@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+    <style>
+        *{
+            box-sizing: border-box; /*must add to let the width no affect,but only for padding and border,gap cannot*/
+        }
+        #main{
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+        }
+
+        #main div{
+            width: calc(100% / 4 - 7.5px);
+            height: 50px;
+            padding: 10px;
+            background: lightblue;
+            border: 1px solid black;
+        }
+
+ 
+    </style>
+</head>
+<body>
+    <h1>the flex wrap property</h1>
+
+    <div id="main">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+
+    </div>
+</body>
+</html>

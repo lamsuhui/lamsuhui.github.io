@@ -1,0 +1,124 @@
+    
+     @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+
+     body{
+          background-image: url("../image/bg.jpg");
+          background-position: center;
+          font-family: 'Inconsolata',sans-serif;
+          margin: 0;
+          padding: 0;
+     }
+
+     .header{
+          max-width: 100%;
+          background-color: #6b3f69;
+          margin:0px auto;
+          padding: 0px 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
+
+     .profile{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 10px auto;
+          padding:30px 100px;
+     }
+
+     .profile img{
+          border-radius: 100%;
+     }
+
+     h2,
+     h4,
+     p{
+          color: #8d5f8c;
+          text-align: center;
+          margin: 10px;
+     }
+
+     h2{
+          font-size: 20px;
+     }
+
+     .week123,
+     .week456{
+          display: flex;
+          justify-content:space-evenly;
+          margin: 0px auto;
+          padding: 10px;
+          max-width: 1200px;
+     }
+
+     .topic{
+          display: flex;
+          gap:20px;
+          align-items: center; 
+          justify-content: center;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #8d5f8c;
+          margin-bottom: 16px;
+     }
+
+     .exc{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap:30px
+     }
+
+     .week1,
+     .week2,
+     .week3,
+     .week4{
+          width: 100%;
+          background-color: rgb(221, 195, 195,0.3);
+          margin: 20px 20px;
+          padding:20px 50px;
+          border-radius: 20px;
+     }
+
+     a{
+          text-decoration: none;
+          color: #a376a2;
+     }
+
+     .footer{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: #6b3f69;
+     }
+
+     .disclaimn{
+          display: flex;
+          align-items: center;
+          gap:20px
+          
+     }
+
+     @media screen and (max-width: 800px) {
+          .week123,
+          .week456
+          {
+               display:flex;
+                flex-wrap: wrap;
+                gap: 40px 32px;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                margin: 0px auto;
+                height: auto;
+          }
+          
+     }
+
+    
+
+
+
+    
