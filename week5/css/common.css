@@ -16,7 +16,9 @@
         align-items: center;
     }
 
-    .header{
+    .header,
+    .detail
+    {
         display: flex;
         align-items: center;
         gap:50px;
@@ -28,8 +30,7 @@
         display: block;
     }
 
-    a {
-        font-family: "Space Grotesk",sans-serif;
+    .container1 a {
         text-decoration: none;
         color: #191A23;
         font-size: 20px;
@@ -39,7 +40,6 @@
 
     .request{
         background-color: white;
-        font-family: "Space Grotesk",sans-serif;
         color:#191A23;
         border: 1px solid #191A23; 
         border-radius: 14px; 
@@ -51,20 +51,196 @@
         margin: 4px 2px; 
     }
 
-    .ham{
+    .ham,
+    .social2{
         display: none;
     }
 
-    
+    .container1b{
+        max-width: 1241px;
+        max-height: 514px;
+        background-color:#191A23 ;
+        border-radius: 45px 45px 0 0;
+        padding: 50px 60px;
+        gap: 50px;
+        margin: 0 auto;
+
+    }
+
+    .footer{
+        max-width: 1121px;
+        max-height: 30px;
+        display:flex; 
+        justify-content: space-between;
+        margin: 0 auto;
+        padding:40px;
+        gap:155px;
+
+    }
+
+    .detail{
+        max-width:501px;
+        max-height:23px;
+        gap:40px
+    }
+
+    .detail a{
+        max-width:79px;
+        max-height:23px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-decoration: solid underline;
+    }
+
+    .social{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        justify-content: space-between;
+    }
+
+    .logo2{
+        max-width: 180px;
+        max-height: 29px;
+    }
+
+    .contact{
+        display:flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1120px;
+        max-height:185px;
+    }
+
+    .us{
+        display:block;
+        max-height:185px;
+        max-width:332px;
+        gap:27px;
+    }
+
+    .us h4{
+        background-color: #b9ff66;
+        max-width:126px;
+        max-height:26px;
+        border-radius:7px;
+        padding: 0 7px;
+        gap:10px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .us p{
+        color: #ffffff;
+        max-width:332px;
+        max-height:132px;
+        gap:20px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .rec{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width:700px;
+        max-height:184px;
+        border-radius: 14px;
+        padding: 58px 40px;
+        gap:20px;
+        background-color: #292a32;
+    }
+
+    .email{
+        max-width:285px;
+        max-height:67px;
+        border-radius: 14px;
+        border: 1px solid #ffffff;
+        padding: 15px 300px 15px 20px;
+        gap:10px;
+    }
+
+    .email p{
+        max-width:45px;
+        max-height:23px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .subsc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 249px;
+        max-height: 68px;
+        border-radius: 14px;
+        padding: 10px 40px;
+        gap:10px;
+        background-color: #b9ff66;
+    }
+
+    .subsc p{
+        color:black;
+        max-width: 179px;
+        max-height: 28px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .priva{
+        max-width: 1120px;
+        max-height: 78px;
+        gap:50px;
+        border-top: 1px solid #ffffff;
+        display:flex;
+        margin: 100px auto;
+    }
+
+    .bt2{
+        display: flex;
+        max-width: 485px;
+        max-height: 28px;
+        gap: 40px;
+    }
+
+    .cpr{
+        max-width: 324px;
+        max-height: 28px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #ffffff;
+    }
+
+    .pp{
+        max-width: 121px;
+        max-height: 28px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-decoration: solid underline;
+        color: #ffffff;
+    }
+
+
+
 
     @media screen and (max-width: 1200px) 
     {
-        .container1{
+        .container1,
+        .container1b{
             max-height: none;
             padding: 20px 24px;
         }
         
-        .header {
+        .header,
+        .social {
             display: none;
         }
 
@@ -72,8 +248,16 @@
             display: block;
         }
 
+        .social2{
+            display: flex;
+        }
+
         .logo{
             max-width: 200px;
         }
+
+        
+
+        
     }
 
