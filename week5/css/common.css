@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
     
+    *{
+        box-sizing: border-box;
+    }
+
     body{
         font-family: "Space Grotesk",sans-serif;
         color: #191A23;
@@ -63,7 +67,7 @@
         border-radius: 45px 45px 0 0;
         padding: 50px 60px;
         gap: 50px;
-        margin: 0 auto;
+        margin: 300px auto 0px;
 
     }
 
@@ -72,8 +76,9 @@
         max-height: 30px;
         display:flex; 
         justify-content: space-between;
+        align-items: center;
         margin: 0 auto;
-        padding:40px;
+        padding: 40px 0px;
         gap:155px;
 
     }
@@ -81,11 +86,10 @@
     .detail{
         max-width:501px;
         max-height:23px;
-        gap:40px
+        gap:20px
     }
 
     .detail a{
-        max-width:79px;
         max-height:23px;
         color: #ffffff;
         font-size: 16px;
@@ -107,7 +111,7 @@
         max-height: 29px;
     }
 
-    .contact{
+    .cont{
         display:flex;
         justify-content: space-between;
         margin: 0 auto;
@@ -116,7 +120,6 @@
     }
 
     .us{
-        display:block;
         max-height:185px;
         max-width:332px;
         gap:27px;
@@ -155,12 +158,14 @@
     }
 
     .email{
-        max-width:285px;
+        width:285px;
         max-height:67px;
         border-radius: 14px;
         border: 1px solid #ffffff;
-        padding: 15px 300px 15px 20px;
+        padding: 15px 30px 15px 20px;
         gap:10px;
+        display: flex;
+        align-items: center;
     }
 
     .email p{
@@ -175,7 +180,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 249px;
         max-height: 68px;
         border-radius: 14px;
         padding: 10px 40px;
@@ -199,6 +203,7 @@
         border-top: 1px solid #ffffff;
         display:flex;
         margin: 100px auto;
+        padding: 20px 0px;
     }
 
     .bt2{
@@ -208,7 +213,7 @@
         gap: 40px;
     }
 
-    .cpr{
+    .cpr p{
         max-width: 324px;
         max-height: 28px;
         font-size: 18px;
@@ -217,7 +222,7 @@
         color: #ffffff;
     }
 
-    .pp{
+    .pp p{
         max-width: 121px;
         max-height: 28px;
         font-weight: 400;
@@ -237,6 +242,81 @@
         .container1b{
             max-height: none;
             padding: 20px 24px;
+            margin: 0 auto;
+            border-radius: none;
+        }
+
+        .footer,
+        .cont,
+        .us,
+        .rec,
+        .bt2,
+        .priva{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            max-height: none;
+            gap:20px;
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .footer{
+            margin: 40px auto;
+        }
+
+        .us p,
+        .detail,
+        .cpr p,
+        .pp p{
+            font-size: 14px;
+        }
+
+        .detail{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-height: none;
+            max-width: 100%;
+        }
+
+        .detail a{
+            text-decoration: none;
+        }
+
+        .us p,
+        .us h4,
+        .email,
+        .subsc,
+        .subsc p{
+            max-width: 100%;
+            max-height: none;
+        }
+
+        .rec{
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            padding: 30px 20px;
+            gap:20px;
+            border-radius: 20px;
+        }
+
+        .email{
+            width: 100%;
+            padding: 15px 20px;
+        }
+
+        .subsc{
+            width: 100%;
+            padding: 15px 20px;
+        }
+
+        .priva{
+            margin:40px auto;
+            border-top: 1px solid #ffffff;
+            padding-top: 20px;
         }
         
         .header,
@@ -249,15 +329,14 @@
         }
 
         .social2{
+            max-width: 100px;
+            gap: 20px;
             display: flex;
         }
 
         .logo{
             max-width: 200px;
         }
-
-        
-
-        
+  
     }
 
