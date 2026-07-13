@@ -238,9 +238,9 @@
         .container1,
         .container1b{
             max-height: none;
+            margin: auto;
             padding: 20px 24px;
-            margin: 0 auto;
-            border-radius: none;
+            border-radius: 20px;
         }
 
         .footer,

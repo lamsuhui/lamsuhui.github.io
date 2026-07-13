@@ -165,7 +165,8 @@
         border-bottom: 1px solid #000000;
     }
 
-    .two{
+    .two,
+    .two1{
         max-height: 77px;
         display: flex;
         align-items: center;
@@ -174,14 +175,16 @@
     }
 
     .one-in,
-    .two-in{
+    .two-in,
+    .two-in1{
         max-height: 77px;
         gap: 25px;
         display: flex;
         align-items: center;
     }
 
-    .top{
+    .top,
+    .top1{
         max-width: 65px;
         max-height: 77px;
         font-size: 60px;
@@ -189,7 +192,8 @@
         letter-spacing: 0%;
     }
 
-    .c{
+    .c,
+    .c1{
         max-width: 612px;
         max-height: 38px;
         font-size: 30px;
@@ -199,7 +203,8 @@
     }
 
     .green img,
-    .white img{
+    .white img,
+    .white1 img{
         max-width: 58px;
         max-height: 58px;
         padding: 10px;
@@ -215,7 +220,8 @@
         padding: 20px 0;
     }
 
-    .white{
+    .white,
+    .white1{
         margin: 0 auto;
         color: black;
         width: 100%;
@@ -228,6 +234,16 @@
         border: 1px solid #191A23;
         border-radius: 45px;
         box-shadow: 0px 5px 0px #191A23;
+    }
+
+    .white1,
+    .two1,
+    .two-in1,
+    .top1,
+    .c1,
+    .white1 img{
+        display:none;
+        
     }
 
     .container7{
@@ -248,7 +264,8 @@
         justify-content: space-between;
     }
 
-    .square{
+    .square,
+    .square1{
         max-width: 387px;
         max-height: 331px;
         border: 1px solid #191A23;
@@ -256,7 +273,6 @@
         background-color: #ffffff;
         border-radius: 45px;
         padding: 40px 35px;
-        gap:10px;
     }
 
     .square-in{
@@ -278,6 +294,7 @@
     }
 
     .photo{
+        padding: 0 10px;
         display: flex;
         justify-content: space-between;
         max-width:105.65px;
@@ -307,42 +324,193 @@
         letter-spacing: 0%;
     }
 
+    .container8{
+        padding: 20px 130px;
+        display: flex;
+        justify-content: flex-end;
+    }
 
+    .see{
+        max-width: 269px;
+        max-height: 68px;
+        background-color: #191A23;
+        border-radius: 14px;
+        padding: 20px 35px;
+        gap:10px;
+        display: flex;
+        justify-content: center;
+    }
 
+    .container8 span{
+        max-width: 117px;
+        max-height: 28px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        color: #ffffff;
 
+    }
 
-
-
- 
-
-
-
-
-    
-
-
-
-    
-
-
-
-
-
-
-    
-        @media screen and (max-width: 1200px) 
+    @media screen and (max-width: 1200px) 
     {
-        .container2 {
+        .container2,
+        .container4,
+        .container6{
+            max-height: none;
             flex-direction:column;
-            gap: 30px;
+            gap: 18px;
             align-items: center;
-            padding: 40px 24px;
+            padding: 30px 20px;
         }
 
-        .des{
-            font-size: 20px;
-
+        .cas,
+        .cas1,
+        .cas2{
+            font-size: 32px;
+            margin: auto;
         }
 
+        .des,
+        .des1,
+        .des2{
+            font-size: 18px;
+            max-width: 320px;
+            text-align: center;
+        }
+
+        .container3{
+        flex-direction: column;
+        max-width: 90%;
+        max-height: none;
+        padding: 40px 30px;
+        gap: 40px;
+        }
+
+        .b1,
+        .b2,
+        .b3{
+            max-width: 100%;
+            max-height: none;
+            min-width: 0;
+        }
+
+        .b1,
+        .b2{
+            border-right: none;
+            border-bottom: 1px solid #ffffff;
+            padding-right: 0;
+            padding-left: 0;
+            padding-bottom: 30px;
+        }
+
+        .container5{
+            margin:40px auto;
+            padding:20px;
+            gap:20px;
+        }
+
+        .white,
+        .white1{
+            padding:22px;
+            border-radius:30px;
+        }
+
+        .one,
+        .two,
+        .two1{
+            padding:0;
+        }
+
+        .top,
+        .top1{
+            font-size:34px;
+        }
+
+        .c,
+        .c1{
+            font-size:20px;
+        }
+
+        .white img,
+        .white1 img{
+            width:42px;
+            height:42px;
+        }
+
+        .det{
+            margin-top:18px;
+            font-size:15px;
+            line-height:1.6;
+        }
+
+        .container7{
+            padding:0 20px;
+            max-height: none;
+        }
+
+        .column1,
+        .column2{
+            flex-direction:column;
+            gap:20px;
+        }
+
+        .square{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+            width:100%;
+            max-width:none;
+            max-height: none;
+            height: auto;
+        }
+
+    
+        .square-in{
+            max-height: none;
+            max-width:100%;
+            
+        }
+
+        .square1{
+            display:none;
+        }
+
+        .intro{
+            max-width: 100%;
+            max-height: none;
+        }
+
+        .container8{
+            display:flex;
+            margin:40px 0;
+            justify-content:center;
+            padding:30px 20px;
+        }
+
+        .see{
+            width:100%;
+            justify-content:center;
+            max-width:340px;
+            height:68px;
+        }
+
+        .green{
+            display: none;
+        }
+
+        .white1,
+        .two1,
+        .two-in1,
+        .top1,
+        .c1,
+        .white1 img{
+            display:flex
+        }
+        
+        .head{
+            display: flex;
+        }
 
     }
