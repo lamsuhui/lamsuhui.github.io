@@ -13,7 +13,7 @@
     .container4{
         max-width: 1440px;
         max-height: 51px;
-        padding: 10px 10px;
+        padding: 30px 10px;
         display:flex;
         margin: 0 auto;
         gap:40px;
@@ -132,25 +132,67 @@
 
     .container5{
         max-width: 1440px;
-        max-height: 1010px;
-        gap: 40px;
+        max-height: 1224px;
+        gap: 30px;
         display:flex;
         flex-direction: column;
-        padding: 0px 100px;
-        margin: 10px auto; 
+        padding: 50px 20px;
+        margin: 30px auto; 
     }
 
-    .first {
+    .first{
+        color: black;
         width: 100%;
-        max-height: 310px;
-        padding: 50px;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
+        max-height: 279px;
+        max-width: 1234px;
+        padding: 41px 60px;
+        display:column;
+        background-color: #b9ff66;
         border: 1px solid #191A23;
         border-radius: 45px;
         box-shadow: 0px 5px 0px #191A23;
     }
+
+    .one{
+        max-width: 1117px;
+        max-height: 77px;
+        display: flex;
+        padding: 40px 0px;
+        justify-content: space-between;
+        border-bottom: 1px solid #000000;
+    }
+
+    .one-in{
+        max-width: 702px;
+        max-height: 77px;
+        gap: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .top{
+        max-width: 65px;
+        max-height: 77px;
+        font-size: 60px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .c{
+        max-width: 612px;
+        max-height: 38px;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .first img{
+        max-width: 58px;
+        max-width: 58px;
+    }
+
+
 
     
 
