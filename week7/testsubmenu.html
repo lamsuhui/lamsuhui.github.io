@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    a {
+	    text-decoration: none;
+        }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        padding: 20px;
+        }
+
+    .submenu {
+        opacity: 0; /* to make it disappear */
+        position: absolute;
+	    pointer-events: none; /* make the submenu not hoverable or clickable */
+        transition: all 0.3s; /* transition (animation pop up) effect */
+        }
+
+    .submenu a {
+        display: block; /* make next link second line */
+        padding: 5px;
+    }
+
+    .has-submenu > a::after {
+	content: "⇂";
+	margin-left: 2px;}
+
+    .has-submenu:hover > .submenu {
+        opacity: 1; /* to make it disappear */
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <div class="has-submenu">
+                <a href="#">Services</a>
+                <div class="submenu">
+                    <a href="#">Web Development</a>
+                    <a href="#">App Development</a>
+                </div>
+            </div>
+            <a href="#">Contact</a>
+</div>
+
+</body>
+</html>
